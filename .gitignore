@@ -1,0 +1,39 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDEs / Editors
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs
+logs/
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# Coverage / tests
+coverage/
+.nyc_output/
+
+# Misc
+.tmp/
+.cache/

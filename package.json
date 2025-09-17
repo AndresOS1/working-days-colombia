@@ -1,0 +1,34 @@
+{
+  "name": "working-days-colombia",
+  "version": "1.0.0",
+  "description": "API REST en TypeScript que calcula fechas hábiles en Colombia considerando festivos, horario laboral y conversión a UTC.\r 1",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresOS1/working-days-colombia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresOS1/working-days-colombia/issues"
+  },
+  "homepage": "https://github.com/AndresOS1/working-days-colombia#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "luxon": "^3.7.2",
+    "undici": "^7.16.0",
+    "zod": "^4.1.9"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
