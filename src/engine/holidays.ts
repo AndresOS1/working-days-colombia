@@ -15,7 +15,11 @@ export class RemoteHolidaysProvider implements HolidaysProvider {
 
   public async getHolidays(): Promise<Set<IsoDateStr>> {
     const now = Date.now();
-    if (this.cache && this.lastFetchOkAt && now - this.lastFetchOkAt < this.cacheTtlMs) {
+    if (
+      this.cache &&
+      this.lastFetchOkAt &&
+      now - this.lastFetchOkAt < this.cacheTtlMs
+    ) {
       return this.cache;
     }
     // Retry simple: 2 short backoff attempts

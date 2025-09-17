@@ -1,5 +1,5 @@
 export type IsoDateStr = string; // 'YYYY-MM-DD'
-export type IsoUtcStr = string;  // ISO 8601 con 'Z'
+export type IsoUtcStr = string; // ISO 8601 con 'Z'
 
 export interface WorkingRequest {
   days?: number;

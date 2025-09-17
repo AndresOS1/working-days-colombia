@@ -8,21 +8,21 @@ export const querySchema = z.object({
     .optional()
     .transform((v) => (v === undefined ? undefined : Number(v)))
     .refine((v) => v === undefined || (Number.isInteger(v) && v > 0), {
-      message: "days must be a positive integer"
+      message: "days must be a positive integer",
     }),
   hours: z
     .string()
     .optional()
     .transform((v) => (v === undefined ? undefined : Number(v)))
     .refine((v) => v === undefined || (Number.isInteger(v) && v > 0), {
-      message: "hours must be a positive integer"
+      message: "hours must be a positive integer",
     }),
   date: z
     .string()
     .optional()
     .refine((v) => v === undefined || /Z$/.test(v), {
-      message: "date must be ISO 8601 UTC ending with 'Z'"
-    })
+      message: "date must be ISO 8601 UTC ending with 'Z'",
+    }),
 });
 
 export function badRequest(res: Response, message: string): Response {
