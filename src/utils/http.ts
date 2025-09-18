@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { z } from "zod";
-import { ErrorResponse } from "../engine/types";
+import { ErrorResponse } from "../engine/types.js";
 
 export const querySchema = z.object({
   days: z
