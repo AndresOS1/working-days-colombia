@@ -6,6 +6,9 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
+    ignores: ["eslint.config.ts"],
+  },
+  {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     languageOptions: {
       parserOptions: {
