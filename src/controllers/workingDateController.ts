@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { BusinessTimeEngine } from "../engine/businessTime";
-import { RemoteHolidaysProvider } from "../engine/holidays";
+import { BusinessTimeEngine } from "../engine/businessTime.js";
+import { RemoteHolidaysProvider } from "../engine/holidays.js";
 import {
   querySchema,
   badRequest,

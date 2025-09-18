@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { getWorkingDate } from "./controllers/workingDateController";
-import { healthCheck, helloWorld } from "./controllers/healthController";
+import { getWorkingDate } from "./controllers/workingDateController.js";
+import { healthCheck, helloWorld } from "./controllers/healthController.js";
 
 const router = Router();
 
