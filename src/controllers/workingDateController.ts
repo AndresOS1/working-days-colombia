@@ -6,8 +6,8 @@ import {
   badRequest,
   upstreamUnavailable,
   internalError,
-} from "../utils/http";
-import { SuccessResponse } from "../engine/types";
+} from "../utils/http.js";
+import { SuccessResponse } from "../engine/types.js";
 
 const engine = new BusinessTimeEngine({
   holidaysProvider: new RemoteHolidaysProvider(),
