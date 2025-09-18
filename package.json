@@ -15,9 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/AndresOS1/working-days-colombia.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Andres Ordoñez",
+  "license": "MIT",
+  "keywords": [
+    "colombia",
+    "working-days",
+    "api",
+    "typescript",
+    "express",
+    "luxon"
+  ],
   "bugs": {
     "url": "https://github.com/AndresOS1/working-days-colombia/issues"
   },
