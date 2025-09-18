@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import router from "./routes.js";
 
@@ -13,12 +13,14 @@ app.use(router);
 const PORT = process.env.PORT || "3000";
 
 // Health check endpoint
-app.get("/health", (_req, res) => res.status(200).send({ status: "ok" }));
+app.get("/health", (request: Request, res: Response) =>
+  res.status(200).send({ status: "ok" })
+);
 
 app
   .listen(Number(PORT), () => {
     console.log("Server running at PORT: ", PORT);
   })
-  .on("error", (error) => {
+  .on("error", (error: Error) => {
     throw new Error(error.message);
   });
