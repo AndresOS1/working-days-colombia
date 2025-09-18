@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Response } from "express";
 import { z } from "zod";
 import { ErrorResponse } from "../engine/types.js";
 
@@ -27,15 +27,15 @@ export const querySchema = z.object({
 
 export function badRequest(res: Response, message: string): Response {
   const payload: ErrorResponse = { error: "InvalidParameters", message };
-  return res.status(400).type("application/json").send(JSON.stringify(payload));
+  return res.status(400).send(JSON.stringify(payload));
 }
 
 export function upstreamUnavailable(res: Response, message: string): Response {
   const payload: ErrorResponse = { error: "UpstreamUnavailable", message };
-  return res.status(503).type("application/json").send(JSON.stringify(payload));
+  return res.status(503).send(JSON.stringify(payload));
 }
 
 export function internalError(res: Response, message: string): Response {
   const payload: ErrorResponse = { error: "InternalError", message };
-  return res.status(500).type("application/json").send(JSON.stringify(payload));
+  return res.status(500).send(JSON.stringify(payload));
 }
